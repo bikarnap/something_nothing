@@ -55,6 +55,7 @@ java -cp ".:junit-4.12.jar:hamcrest-core-1.3.jar:cpsuite-1.2.6.jar" org.junit.ru
 # Output
 
 The output of running the all test suites (TestSuiteAll) can be redirected to OUTPUT.txt file as
+
 Compile TestRunner.java
 ```
 javac -cp ".:junit-4.12.jar:hamcrest-core-1.3.jar:cpsuite-1.2.6.jar" TestRunner.java 
@@ -63,9 +64,10 @@ Then run TestRunner
 ```
 java -cp ".:junit-4.12.jar:hamcrest-core-1.3.jar:cpsuite-1.2.6.jar" TestRunner > OUTPUT.txt
 ```
-*** Note that in Windows ':' should be replaced by ';' ***
+_Note that in Windows ':' should be replaced by ';'_
 
-*** All the unit tests for each of the test classes can be run on Linux/Mac by creating a .sh file with the following contents ***
+_All the unit tests for each of the test classes can be run on Linux/Mac by creating a .sh file with the following contents_
+
 ```
 #!/bin/bash
 test_classes="AdminTest BookTest CalculatorTest FineTest LibraryTest ReservationTest ReservationListTest SearchTest StringManipulatorTest UserTest"
