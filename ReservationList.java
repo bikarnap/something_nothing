@@ -20,6 +20,7 @@ public class ReservationList {
         this.reservations = new ArrayList<>();
     }
 
+    
     /**
      * Adds a reservation to the list.
      */
@@ -50,4 +51,11 @@ public class ReservationList {
         }
         return userReservations;
     }
+
+
+    public void setReservations(List<Reservation> reservations) {
+        this.reservations = reservations;
+    }
+
+    
 }
