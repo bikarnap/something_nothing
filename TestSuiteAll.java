@@ -7,6 +7,7 @@ import org.junit.runners.Suite.SuiteClasses;
 @SuiteClasses({
   AdminTest.class,
   BookTest.class,
+  CalculatorTest.class,
   FineTest.class,
   LibraryTest.class,
   // UserTest.class,
