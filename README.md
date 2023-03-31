@@ -2,10 +2,13 @@
 
 # The program contains a Main class which can be run as:
 ## Compile Main.java
+```
 javac Main.java
+```
 ## Run Main.class
+```
 java Main
-
+```
 # Run tests
 There are 10 classes excluding the Main class. Each of the 10 classes has corresponding
 test classes that contain test cases.
@@ -55,13 +58,14 @@ The output of running the all test suites (TestSuiteAll) can be redirected to OU
 Compile TestRunner.java
 ```
 javac -cp ".:junit-4.12.jar:hamcrest-core-1.3.jar:cpsuite-1.2.6.jar" TestRunner.java 
-````
+```
 Then run TestRunner
-````
+```
 java -cp ".:junit-4.12.jar:hamcrest-core-1.3.jar:cpsuite-1.2.6.jar" TestRunner > OUTPUT.txt
-````
+```
 *** Note that in Windows ':' should be replaced by ';' ***
-** All the unit tests for each of the test classes can be run on Linux/Mac by creating a .sh file with the following contents **
+
+*** All the unit tests for each of the test classes can be run on Linux/Mac by creating a .sh file with the following contents ***
 ```
 #!/bin/bash
 test_classes="AdminTest BookTest CalculatorTest FineTest LibraryTest ReservationTest ReservationListTest SearchTest StringManipulatorTest UserTest"
