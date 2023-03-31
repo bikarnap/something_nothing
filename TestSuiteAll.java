@@ -16,7 +16,7 @@ import org.junit.runners.Suite.SuiteClasses;
   
   // SearchTest.class
 })
-public class LibraryManagementTestSuite {
+public class TestSuiteAll {
   public static void main(String[] args) {
     System.out.println("Test suite");
   }
