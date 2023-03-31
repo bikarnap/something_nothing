@@ -1,13 +1,22 @@
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.*;
 
+/**
+ * @author  Bikarna Pokharel &lt;bikarnap@gmail.com&gt;
+ * @version 2023.0322
+ * @since 17.0
+ */
+
+@RunWith(JUnit4.class)
 public class ReservationListTest {
-    private Book book1, book2;
+    private Book book1, book2, book3;
     private User user1, user2;
     private Date date;
     private Reservation reservation1, reservation2, reservation3;
@@ -15,13 +24,13 @@ public class ReservationListTest {
 
     @Before
     public void setUp() throws Exception {
-        // Set up the books, borrowers, date, reservations, and reservation list objects for testing
+        // Set up the books, users, date, reservations, and reservation list objects for testing
         book1 = new Book("Advanced Software Testing Vol. 1", 
           "Black R.", "1912");
         book2 = new Book("The Software Engineer's Handbook, 1st editonAdvanced Software Testing Vol. 1", 
           "Graham B & McKay J", "1911");
-        Book book3 = new Book("Software Testing, 2nd edition", 
-        "Patton R", "1946");
+        book3 = new Book("Software Testing, 2nd edition", 
+            "Patton R", "1946");
 
         user1 = new User("Timo Pitkanen", "0466123164", 2);
         user2 = new User("Reshma Mahat", "0445413649", 3);

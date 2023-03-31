@@ -10,6 +10,7 @@ import org.junit.runners.Suite.SuiteClasses;
   CalculatorTest.class,
   FineTest.class,
   LibraryTest.class,
+  ReservationTest.class,
   // UserTest.class,
   
   // ReservationTest.class,

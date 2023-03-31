@@ -2,11 +2,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @author  Bikarna Pokharel &lt;bikarnap@gmail.com&gt;
+ * @version 2023.0322
+ * @since 17.0
+ */
+/**
  * The ReservationList class represents a list of reservations made by library users.
  */
 public class ReservationList {
     private List<Reservation> reservations;
 
+    /**
+     * Constructs a reservation list for books.
+     * <p> Initializes by adding a new ArrayList object.
+     */
     public ReservationList() {
         this.reservations = new ArrayList<>();
     }

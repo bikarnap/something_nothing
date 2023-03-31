@@ -6,6 +6,11 @@ import java.util.Date;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * @author  Bikarna Pokharel &lt;bikarnap@gmail.com&gt;
+ * @version 2023.0324
+ * @since 17.0
+ */
 public class ReservationTest {
   private Book book1, book2, book3;
   private User user1, user2, user3;
