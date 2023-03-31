@@ -1,0 +1,269 @@
+Running null...
+
+1) testBook1Isbn(BookTest):
+    OK (1ms)
+
+2) testBook2Isbn(BookTest):
+    OK (0ms)
+
+3) testBook3Isbn(BookTest):
+    OK (0ms)
+
+4) testBook1Author(BookTest):
+    OK (0ms)
+
+5) testSetIsbnBook1(BookTest):
+    OK (0ms)
+
+6) testSetIsbnBook2(BookTest):
+    OK (0ms)
+
+7) testSetIsbnBook3(BookTest):
+    OK (0ms)
+
+8) testSetTitleBook1(BookTest):
+    OK (0ms)
+
+9) testSetTitleBook2(BookTest):
+    OK (0ms)
+
+10) testSetTitleBook3(BookTest):
+    OK (0ms)
+
+11) testBook1Title(BookTest):
+    OK (0ms)
+
+12) testBook2Title(BookTest):
+    OK (0ms)
+
+13) testBook3Title(BookTest):
+    OK (0ms)
+
+14) testBook2Author(BookTest):
+    OK (0ms)
+
+15) testSetAuthorBook1(BookTest):
+    OK (0ms)
+
+16) testSetAuthorBook2(BookTest):
+    OK (1ms)
+
+17) testSetAuthorBook3(BookTest):
+    OK (0ms)
+
+18) testBook3Author(BookTest):
+    OK (0ms)
+
+19) testAddExistingBook(LibraryTest):
+    OK (1ms)
+
+20) testAddInvalidBook(LibraryTest):
+    OK (0ms)
+
+21) testAddBook(LibraryTest):
+    OK (0ms)
+
+22) testGetAllBooks(LibraryTest):
+    OK (1ms)
+
+23) testRemoveNonExistingBook(LibraryTest):
+    OK (0ms)
+
+24) testIsBookAvailable(LibraryTest):
+    OK (0ms)
+
+25) testRemoveBook(LibraryTest):
+    OK (0ms)
+
+26) testGetNumberOfBooks(LibraryTest):
+    OK (0ms)
+
+27) testGetNameUser1(UserTest):
+    OK (11ms)
+
+28) testGetNameUser2(UserTest):
+    OK (0ms)
+
+29) testGetNameUser3(UserTest):
+    OK (0ms)
+
+30) testSetIdUser1(UserTest):
+    OK (0ms)
+
+31) testSetIdUser2(UserTest):
+    OK (0ms)
+
+32) testSetIdUser3(UserTest):
+    OK (0ms)
+
+33) testGetPhoneUser1(UserTest):
+    OK (0ms)
+
+34) testGetPhoneUser2(UserTest):
+    OK (0ms)
+
+35) testGetPhoneUser3(UserTest):
+    OK (0ms)
+
+36) testGetBorrowedBooksUser1(UserTest):
+    OK (0ms)
+
+37) testGetBorrowedBooksUser2(UserTest):
+    OK (0ms)
+
+38) testGetBorrowedBooksUser3(UserTest):
+    OK (0ms)
+
+39) testSetPhoneUser1(UserTest):
+    OK (1ms)
+
+40) testSetPhoneUser2(UserTest):
+    OK (0ms)
+
+41) testSetPhoneUser3(UserTest):
+    OK (0ms)
+
+42) testGetIdUser1(UserTest):
+    OK (1ms)
+
+43) testGetIdUser2(UserTest):
+    OK (0ms)
+
+44) testGetIdUser3(UserTest):
+    OK (1ms)
+
+45) testGetDueDate(FineTest):
+    OK (35ms)
+
+46) testGetUser(FineTest):
+    OK (0ms)
+
+47) testSetDueDate(FineTest):
+    OK (163ms)
+
+48) testSetAmount(FineTest):
+    OK (0ms)
+
+49) testGetFineId(FineTest):
+    OK (0ms)
+
+50) testSetUser(FineTest):
+    OK (0ms)
+
+51) testGetFineAmount(FineTest):
+    OK (0ms)
+
+52) testGetBook1(ReservationTest):
+    OK (1ms)
+
+53) testGetBook2(ReservationTest):
+    OK (0ms)
+
+54) testGetBook3(ReservationTest):
+    OK (0ms)
+
+55) testGetDate1(ReservationTest):
+    OK (0ms)
+
+56) testRemoveReservation(ReservationListTest):
+    OK (1ms)
+
+57) testGetReservationsByBorrower(ReservationListTest):
+    OK (0ms)
+
+58) testAddReservation(ReservationListTest):
+    OK (0ms)
+
+59) testRemoveBook1(AdminTest):
+    OK (0ms)
+
+60) testRemoveBook2(AdminTest):
+    OK (0ms)
+
+61) testRemoveBook3(AdminTest):
+    OK (0ms)
+
+62) testRemoveUser1(AdminTest):
+    OK (0ms)
+
+63) testRemoveUser2(AdminTest):
+    OK (0ms)
+
+64) testRemoveUser3(AdminTest):
+    OK (0ms)
+
+65) testAddBook1(AdminTest):
+    OK (0ms)
+
+66) testAddBook2(AdminTest):
+    OK (0ms)
+
+67) testAddBook3(AdminTest):
+    OK (0ms)
+
+68) testAddUser1(AdminTest):
+    OK (0ms)
+
+69) testAddUser2(AdminTest):
+    OK (0ms)
+
+70) testAddUser3(AdminTest):
+    OK (0ms)
+
+71) testToString1(AdminTest):
+    OK (45ms)
+
+72) testToString2(AdminTest):
+    OK (0ms)
+
+73) testToString3(AdminTest):
+    OK (0ms)
+
+74) testGetResultsBook1(SearchTest):
+    OK (1ms)
+
+75) testGetResultsBook2(SearchTest):
+    OK (0ms)
+
+76) testGetResultsBook3(SearchTest):
+    OK (0ms)
+
+77) testSearchBook1(SearchTest):
+    OK (0ms)
+
+78) testSearchBook2(SearchTest):
+    OK (1ms)
+
+79) testSearchBook3(SearchTest):
+    OK (0ms)
+
+80) testSetSearch1(SearchTest):
+    OK (0ms)
+
+81) testSetSearch2(SearchTest):
+    OK (0ms)
+
+82) testSetSearch3(SearchTest):
+    OK (0ms)
+
+83) testToString1(SearchTest):
+    OK (0ms)
+
+84) testToString2(SearchTest):
+    OK (0ms)
+
+85) testToString3(SearchTest):
+    OK (0ms)
+
+86) testGetSearchBook1(SearchTest):
+    OK (0ms)
+
+87) testGetSearchBook2(SearchTest):
+    OK (0ms)
+
+88) testGetSearchBook3(SearchTest):
+    OK (0ms)
+
+
+OK: 88, Failed: 0, Ignored: 0
+Test run finished in 348ms
