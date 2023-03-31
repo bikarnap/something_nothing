@@ -11,10 +11,11 @@ import org.junit.runners.Suite.SuiteClasses;
   FineTest.class,
   LibraryTest.class,
   ReservationTest.class,
+  ReservationListTest.class, 
   // UserTest.class,
   
-  // ReservationTest.class,
-  // ReservationListTest.class, 
+  
+ 
   
   // SearchTest.class
 })

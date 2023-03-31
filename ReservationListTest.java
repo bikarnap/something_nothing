@@ -3,6 +3,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -45,29 +46,177 @@ public class ReservationListTest {
         reservationList.addReservation(reservation3);
     }
 
+    /**
+     * Tests addReservation method.
+     */
     @Test
-    public void testAddReservation() {
+    public void testAddReservation1() {
         Reservation reservation4 = new Reservation(user2, book2, date);
         reservationList.addReservation(reservation4);
         assertTrue(reservationList.getReservations().contains(reservation4));
     }
 
+    /**
+     * Tests addReservation method.
+     */
     @Test
-    public void testRemoveReservation() {
+    public void testAddReservation2() {
+        Reservation reservation5 = new Reservation(user2, book2, date);
+        reservationList.addReservation(reservation5);
+        assertTrue(reservationList.getReservations().contains(reservation5));
+    }
+
+    /**
+     * Tests addReservation method.
+     */
+    @Test
+    public void testAddReservation3() {
+        Reservation reservation6 = new Reservation(user2, book2, date);
+        reservationList.addReservation(reservation6);
+        assertTrue(reservationList.getReservations().contains(reservation6));
+    }
+
+    /**
+     * Tests removeReservation method.
+     */
+    @Test
+    public void testRemoveReservatio1n() {
         reservationList.removeReservation(reservation1);
         assertFalse(reservationList.getReservations().contains(reservation1));
     }
 
+    /**
+     * Tests removeReservation method.
+     */
     @Test
-    public void testGetReservationsByBorrower() {
+    public void testRemoveReservation2() {
+        reservationList.removeReservation(reservation2);
+        assertFalse(reservationList.getReservations().contains(reservation2));
+    }
+
+    /**
+     * Tests removeReservation method.
+     */
+    @Test
+    public void testRemoveReservation3() {
+        reservationList.removeReservation(reservation3);
+        assertFalse(reservationList.getReservations().contains(reservation3));
+    }
+
+    /**
+     * Tests getReservation mathod.
+     * <p> Checks based on the number of Reservation.
+     */
+    @Test
+    public void testgetReservation1() {
+        assertEquals(3, reservationList.getReservations().size());
+    }
+
+    /**
+     * Tests getReservation mathod.
+     * <p> Checks based on the number of Reservation.
+     */
+    @Test
+    public void testgetReservation2() {
+        Reservation reservation4 = new Reservation(user2, book2, date);
+        reservationList.addReservation(reservation4);
+        assertEquals(4, reservationList.getReservations().size());
+    }
+
+
+    /**
+     * Tests getReservation mathod.
+     * <p> Checks based on the number of Reservation.
+     */
+    @Test
+    public void testgetReservation3() {
+        Reservation reservation4 = new Reservation(user2, book2, date);
+        reservationList.addReservation(reservation4);
+        Reservation reservation5 = new Reservation(user2, book2, date);
+        reservationList.addReservation(reservation5);
+        assertEquals(5, reservationList.getReservations().size());
+    }
+
+    /**
+     * Tests the reservations by user.
+     * <p> Tests if user has made reservation.
+     */
+    @Test
+    public void testGetReservationsByUser1() {
         List<Reservation> user1Reservations = reservationList.getReservationsByUser(user1);
         assertTrue(user1Reservations.contains(reservation1));
         assertTrue(user1Reservations.contains(reservation2));
         assertFalse(user1Reservations.contains(reservation3));
 
+    }
+
+     /**
+     * Tests the reservations by user.
+     * <p> Tests if user has made reservation.
+     */
+    @Test
+    public void testGetReservationsByUser2() {
         List<Reservation> user2Reservations = reservationList.getReservationsByUser(user2);
         assertTrue(user2Reservations.contains(reservation3));
         assertFalse(user2Reservations.contains(reservation1));
         assertFalse(user2Reservations.contains(reservation2));
+    }
+
+     /**
+     * Tests the reservations by user.
+     * <p> Tests if user has made reservation.
+     */
+    @Test
+    public void testGetReservationsByUser3() {
+        User user3 = new User("xia bao", "+23451234", 9);
+        List<Reservation> user3Reservations = reservationList.getReservationsByUser(user3);
+        assertFalse(user3Reservations.contains(reservation1));
+        assertFalse(user3Reservations.contains(reservation2));
+        assertFalse(user3Reservations.contains(reservation3));
+    }
+
+    /**
+     * Tests the serReservations method.
+     */
+    @Test
+    public void testSetReservations1() {
+        Reservation reservation7 = new Reservation(user1, book1, date);
+        List<Reservation> reservations = new ArrayList<>();
+        reservations.add(reservation7);
+        
+        reservationList.setReservations(reservations);
+
+        assertEquals(1, reservationList.getReservations().size());
+    }
+
+     /**
+     * Tests the serReservations method.
+     */
+    @Test
+    public void testSetReservations2() {
+        reservationList.removeReservation(reservation1);
+        Reservation reservation8 = new Reservation(user1, book2, date);
+        List<Reservation> reservations = new ArrayList<>();
+        reservations.add(reservation8);
+        
+        reservationList.setReservations(reservations);
+
+        assertEquals(1, reservationList.getReservations().size());
+    }
+
+     /**
+     * Tests the serReservations method.
+     */
+    @Test
+    public void testSetReservations3() {
+        Reservation reservation9 = new Reservation(user2, book3, date);
+        Reservation reservation10 = new Reservation(user2, book2, date);
+        List<Reservation> reservations = new ArrayList<>();
+        reservations.add(reservation9);
+        reservations.add(reservation10);
+        
+        reservationList.setReservations(reservations);
+
+        assertEquals(2, reservationList.getReservations().size());
     }
 }
