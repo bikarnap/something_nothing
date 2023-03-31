@@ -6,6 +6,9 @@ import java.util.List;
  * @version 2023.0322
  * @since 17.0
  */
+/**
+ * This class represents a Library object.
+ */
  public class Library {
   /**
    * Represents the list of books available in the library.
@@ -25,6 +28,7 @@ import java.util.List;
    */
   public Library() {
     this.books = new ArrayList<>();
+    this.users = new ArrayList<>();
   }
   
   /**
@@ -115,4 +119,8 @@ import java.util.List;
   public void removeUser(User user) {
     users.remove(user);
   }
- }
+
+  public List<User> getUsers() {
+    return users;
+  }
+}

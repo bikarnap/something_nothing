@@ -12,15 +12,10 @@ import org.junit.runners.Suite.SuiteClasses;
   LibraryTest.class,
   ReservationTest.class,
   ReservationListTest.class, 
-  // UserTest.class,
-  
-  
- 
-  
-  // SearchTest.class
+  SearchTest.class,
+  StringManipulatorTest.class,
+  UserTest.class
 })
 public class TestSuiteAll {
-  public static void main(String[] args) {
-    System.out.println("Test suite");
-  }
+
 }

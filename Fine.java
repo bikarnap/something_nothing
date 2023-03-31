@@ -5,6 +5,10 @@ import java.util.Date;
  * @version 2023.0325
  * @since 17.0
  */
+
+ /**
+  * This Fine class represents fine object.
+  */
 public class Fine {
   /**
    * Declares an int field for fine id.

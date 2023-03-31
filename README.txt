@@ -1,4 +1,24 @@
+# The program contains a Main class which can be run as:
+## Compile Main.java
+javac Main.java
+## Run Main.class
+java Main
+
 # Run tests
+There are 10 classes excluding the Main class. Each of the 10 classes has corresponding
+test classes that contain test cases.
+
+The test classes are:
+1. AdminTest.java
+2. BookTest.java
+3. CalculatorTest.java
+4. FineTest.java
+5. LibraryTest.java
+6. ReservationTest.java
+7. ReservationListTest.java
+8. SearchTest.java
+9. StringManipulatorTest.java
+10. UserTest.java
 
 Each test case suite can be run individually or all the test suites can be run as a whole. 
 To run tests as described below, first of all navigate to the folder - unit
@@ -13,6 +33,8 @@ Then run the test
 ````
 java -cp ".:junit-4.12.jar:hamcrest-core-1.3.jar:cpsuite-1.2.6.jar" org.junit.runner.JUnitCore AdminTest
 ````
+
+In the same way other test case classes can be run.
 
 ## Run all test case suites
 There is a Java file named TestSuiteAll.java. This file can be compiled and run in the same way as above.
@@ -34,5 +56,5 @@ javac -cp ".:junit-4.12.jar:hamcrest-core-1.3.jar:cpsuite-1.2.6.jar" TestRunner.
 ````
 Then run TestRunner
 ````
-java -cp ".:junit-4.12.jar:hamcrest-core-1.3.jar:cpsuite-1.2.6.jar" > OUTPUT.txt
+java -cp ".:junit-4.12.jar:hamcrest-core-1.3.jar:cpsuite-1.2.6.jar" TestRunner > OUTPUT.txt
 ````

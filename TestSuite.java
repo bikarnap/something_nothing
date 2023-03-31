@@ -10,13 +10,13 @@ import org.junit.runner.JUnitCore;
 
 // Run only tests matching regexp; Ignore classes with "!"
 @ClassnameFilters({
-    ".*Test",
-    "!.*Regression.*"
+  ".*Test",
+  "!.*Regression.*"
 })
 public class TestSuite {
-    public static void main(String args[]) {
-        JUnitCore junit = new JUnitCore();
-        junit.addListener(new TextListener(System.out));
-        junit.run(TestSuiteAll.class);
-    }
+  public static void main(String args[]) {
+    JUnitCore junit = new JUnitCore();
+    junit.addListener(new TextListener(System.out));
+    junit.run(TestSuiteAll.class);
+  }
 }

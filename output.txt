@@ -1,269 +1,499 @@
-Running null...
+Running test runner...
 
-1) testBook1Isbn(BookTest):
+1) testRemoveBook1(AdminTest):
+    OK (3ms)
+
+2) testRemoveBook2(AdminTest):
+    OK (0ms)
+
+3) testRemoveBook3(AdminTest):
+    OK (0ms)
+
+4) testRemoveUser1(AdminTest):
+    OK (0ms)
+
+5) testRemoveUser2(AdminTest):
+    OK (0ms)
+
+6) testRemoveUser3(AdminTest):
+    OK (0ms)
+
+7) testAddBook1(AdminTest):
+    OK (0ms)
+
+8) testAddBook2(AdminTest):
+    OK (0ms)
+
+9) testAddBook3(AdminTest):
+    OK (0ms)
+
+10) testAddUser1(AdminTest):
     OK (1ms)
 
-2) testBook2Isbn(BookTest):
+11) testAddUser2(AdminTest):
     OK (0ms)
 
-3) testBook3Isbn(BookTest):
+12) testAddUser3(AdminTest):
     OK (0ms)
 
-4) testBook1Author(BookTest):
+13) testToString1(AdminTest):
+    OK (21ms)
+
+14) testToString2(AdminTest):
     OK (0ms)
 
-5) testSetIsbnBook1(BookTest):
+15) testToString3(AdminTest):
     OK (0ms)
 
-6) testSetIsbnBook2(BookTest):
+16) testBook1Isbn(BookTest):
     OK (0ms)
 
-7) testSetIsbnBook3(BookTest):
+17) testBook2Isbn(BookTest):
     OK (0ms)
 
-8) testSetTitleBook1(BookTest):
+18) testBook3Isbn(BookTest):
     OK (0ms)
 
-9) testSetTitleBook2(BookTest):
+19) testBook1Author(BookTest):
     OK (0ms)
 
-10) testSetTitleBook3(BookTest):
+20) testSetIsbnBook1(BookTest):
     OK (0ms)
 
-11) testBook1Title(BookTest):
+21) testSetIsbnBook2(BookTest):
     OK (0ms)
 
-12) testBook2Title(BookTest):
+22) testSetIsbnBook3(BookTest):
     OK (0ms)
 
-13) testBook3Title(BookTest):
+23) testSetTitleBook1(BookTest):
     OK (0ms)
 
-14) testBook2Author(BookTest):
-    OK (0ms)
-
-15) testSetAuthorBook1(BookTest):
-    OK (0ms)
-
-16) testSetAuthorBook2(BookTest):
+24) testSetTitleBook2(BookTest):
     OK (1ms)
 
-17) testSetAuthorBook3(BookTest):
+25) testSetTitleBook3(BookTest):
     OK (0ms)
 
-18) testBook3Author(BookTest):
+26) testBook1Title(BookTest):
     OK (0ms)
 
-19) testAddExistingBook(LibraryTest):
+27) testBook2Title(BookTest):
+    OK (0ms)
+
+28) testBook3Title(BookTest):
+    OK (0ms)
+
+29) testBook2Author(BookTest):
+    OK (0ms)
+
+30) testSetAuthorBook1(BookTest):
+    OK (0ms)
+
+31) testSetAuthorBook2(BookTest):
     OK (1ms)
 
-20) testAddInvalidBook(LibraryTest):
+32) testSetAuthorBook3(BookTest):
     OK (0ms)
 
-21) testAddBook(LibraryTest):
+33) testBook3Author(BookTest):
     OK (0ms)
 
-22) testGetAllBooks(LibraryTest):
+34) testDivideByZero(CalculatorTest):
     OK (1ms)
 
-23) testRemoveNonExistingBook(LibraryTest):
+35) testAdd1(CalculatorTest):
     OK (0ms)
 
-24) testIsBookAvailable(LibraryTest):
+36) testAdd2(CalculatorTest):
     OK (0ms)
 
-25) testRemoveBook(LibraryTest):
-    OK (0ms)
-
-26) testGetNumberOfBooks(LibraryTest):
-    OK (0ms)
-
-27) testGetNameUser1(UserTest):
-    OK (11ms)
-
-28) testGetNameUser2(UserTest):
-    OK (0ms)
-
-29) testGetNameUser3(UserTest):
-    OK (0ms)
-
-30) testSetIdUser1(UserTest):
-    OK (0ms)
-
-31) testSetIdUser2(UserTest):
-    OK (0ms)
-
-32) testSetIdUser3(UserTest):
-    OK (0ms)
-
-33) testGetPhoneUser1(UserTest):
-    OK (0ms)
-
-34) testGetPhoneUser2(UserTest):
-    OK (0ms)
-
-35) testGetPhoneUser3(UserTest):
-    OK (0ms)
-
-36) testGetBorrowedBooksUser1(UserTest):
-    OK (0ms)
-
-37) testGetBorrowedBooksUser2(UserTest):
-    OK (0ms)
-
-38) testGetBorrowedBooksUser3(UserTest):
-    OK (0ms)
-
-39) testSetPhoneUser1(UserTest):
+37) testAdd3(CalculatorTest):
     OK (1ms)
 
-40) testSetPhoneUser2(UserTest):
+38) testMultiply1(CalculatorTest):
     OK (0ms)
 
-41) testSetPhoneUser3(UserTest):
+39) testMultiply2(CalculatorTest):
     OK (0ms)
 
-42) testGetIdUser1(UserTest):
+40) testMultiply3(CalculatorTest):
+    OK (0ms)
+
+41) testSubtract1(CalculatorTest):
+    OK (0ms)
+
+42) testSubtract2(CalculatorTest):
+    OK (0ms)
+
+43) testSubtract3(CalculatorTest):
+    OK (0ms)
+
+44) testDivide1(CalculatorTest):
+    OK (0ms)
+
+45) testDivide2(CalculatorTest):
+    OK (0ms)
+
+46) testDivide3(CalculatorTest):
+    OK (0ms)
+
+47) testPower1(CalculatorTest):
+    OK (0ms)
+
+48) testPower2(CalculatorTest):
+    OK (0ms)
+
+49) testPower3(CalculatorTest):
+    OK (0ms)
+
+50) testGetUser2(FineTest):
     OK (1ms)
 
-43) testGetIdUser2(UserTest):
+51) testGetUser3(FineTest):
     OK (0ms)
 
-44) testGetIdUser3(UserTest):
+52) testSetDueDate1(FineTest):
+    OK (69ms)
+
+53) testSetDueDate2(FineTest):
+    OK (0ms)
+
+54) testSetDueDate3(FineTest):
+    OK (0ms)
+
+55) testGetDueDate1(FineTest):
+    OK (0ms)
+
+56) testGetDueDate2(FineTest):
+    OK (0ms)
+
+57) testGetDueDate3(FineTest):
+    OK (0ms)
+
+58) testGetFineId1(FineTest):
+    OK (0ms)
+
+59) testGetFineId2(FineTest):
+    OK (0ms)
+
+60) testGetFineId3(FineTest):
+    OK (0ms)
+
+61) testGetUser(FineTest):
+    OK (0ms)
+
+62) testGetFineAmount1(FineTest):
+    OK (0ms)
+
+63) testGetFineAmount2(FineTest):
+    OK (0ms)
+
+64) testGetFineAmount3(FineTest):
+    OK (0ms)
+
+65) testSetAmount1(FineTest):
+    OK (0ms)
+
+66) testSetAmount2(FineTest):
+    OK (0ms)
+
+67) testSetAmount3(FineTest):
+    OK (0ms)
+
+68) testSetUser(FineTest):
+    OK (0ms)
+
+69) testSetUser1(FineTest):
+    OK (0ms)
+
+70) testSetUser2(FineTest):
+    OK (0ms)
+
+71) testAddBook(LibraryTest):
+    OK (0ms)
+
+72) testAddUser(LibraryTest):
+    OK (0ms)
+
+73) testGetNumberOfBooks1(LibraryTest):
+    OK (0ms)
+
+74) testGetNumberOfBooks2(LibraryTest):
+    OK (0ms)
+
+75) testGetNumberOfBooks3(LibraryTest):
+    OK (0ms)
+
+76) testRemoveBook1(LibraryTest):
+    OK (0ms)
+
+77) testRemoveBook2(LibraryTest):
+    OK (0ms)
+
+78) testRemoveBook3(LibraryTest):
+    OK (0ms)
+
+79) testAddBook2(LibraryTest):
+Invalid book boject
+    OK (0ms)
+
+80) testAddBook3(LibraryTest):
+Book already exists.
+    OK (0ms)
+
+81) testAddUser1(LibraryTest):
+    OK (0ms)
+
+82) testAddUser2(LibraryTest):
+    OK (0ms)
+
+83) testGetAllBooks1(LibraryTest):
+    OK (0ms)
+
+84) testGetAllBooks2(LibraryTest):
+    OK (0ms)
+
+85) testGetAllBooks3(LibraryTest):
+    OK (0ms)
+
+86) testGetBook1(ReservationTest):
+    OK (0ms)
+
+87) testGetBook2(ReservationTest):
+    OK (0ms)
+
+88) testGetBook3(ReservationTest):
+    OK (0ms)
+
+89) testGetDate1(ReservationTest):
+    OK (0ms)
+
+90) testGetDate2(ReservationTest):
+    OK (0ms)
+
+91) testGetDate3(ReservationTest):
+    OK (0ms)
+
+92) testGetUser1(ReservationTest):
+    OK (0ms)
+
+93) testGetUser2(ReservationTest):
     OK (1ms)
 
-45) testGetDueDate(FineTest):
-    OK (35ms)
-
-46) testGetUser(FineTest):
+94) testGetUser3(ReservationTest):
     OK (0ms)
 
-47) testSetDueDate(FineTest):
-    OK (163ms)
+95) testToString1(ReservationTest):
+    OK (12ms)
 
-48) testSetAmount(FineTest):
+96) testToString2(ReservationTest):
     OK (0ms)
 
-49) testGetFineId(FineTest):
+97) testToString3(ReservationTest):
     OK (0ms)
 
-50) testSetUser(FineTest):
+98) testSetUser1(ReservationTest):
     OK (0ms)
 
-51) testGetFineAmount(FineTest):
+99) testSetUser2(ReservationTest):
     OK (0ms)
 
-52) testGetBook1(ReservationTest):
+100) testSetUser3(ReservationTest):
+    OK (0ms)
+
+101) testGetReservationsByUser1(ReservationListTest):
     OK (1ms)
 
-53) testGetBook2(ReservationTest):
+102) testGetReservationsByUser2(ReservationListTest):
     OK (0ms)
 
-54) testGetBook3(ReservationTest):
+103) testGetReservationsByUser3(ReservationListTest):
     OK (0ms)
 
-55) testGetDate1(ReservationTest):
-    OK (0ms)
-
-56) testRemoveReservation(ReservationListTest):
+104) testRemoveReservatio1n(ReservationListTest):
     OK (1ms)
 
-57) testGetReservationsByBorrower(ReservationListTest):
+105) testRemoveReservation2(ReservationListTest):
     OK (0ms)
 
-58) testAddReservation(ReservationListTest):
+106) testRemoveReservation3(ReservationListTest):
     OK (0ms)
 
-59) testRemoveBook1(AdminTest):
+107) testAddReservation1(ReservationListTest):
     OK (0ms)
 
-60) testRemoveBook2(AdminTest):
+108) testAddReservation2(ReservationListTest):
     OK (0ms)
 
-61) testRemoveBook3(AdminTest):
+109) testAddReservation3(ReservationListTest):
     OK (0ms)
 
-62) testRemoveUser1(AdminTest):
+110) testgetReservation1(ReservationListTest):
     OK (0ms)
 
-63) testRemoveUser2(AdminTest):
-    OK (0ms)
-
-64) testRemoveUser3(AdminTest):
-    OK (0ms)
-
-65) testAddBook1(AdminTest):
-    OK (0ms)
-
-66) testAddBook2(AdminTest):
-    OK (0ms)
-
-67) testAddBook3(AdminTest):
-    OK (0ms)
-
-68) testAddUser1(AdminTest):
-    OK (0ms)
-
-69) testAddUser2(AdminTest):
-    OK (0ms)
-
-70) testAddUser3(AdminTest):
-    OK (0ms)
-
-71) testToString1(AdminTest):
-    OK (45ms)
-
-72) testToString2(AdminTest):
-    OK (0ms)
-
-73) testToString3(AdminTest):
-    OK (0ms)
-
-74) testGetResultsBook1(SearchTest):
+111) testgetReservation2(ReservationListTest):
     OK (1ms)
 
-75) testGetResultsBook2(SearchTest):
+112) testgetReservation3(ReservationListTest):
     OK (0ms)
 
-76) testGetResultsBook3(SearchTest):
+113) testSetReservations1(ReservationListTest):
     OK (0ms)
 
-77) testSearchBook1(SearchTest):
+114) testSetReservations2(ReservationListTest):
     OK (0ms)
 
-78) testSearchBook2(SearchTest):
+115) testSetReservations3(ReservationListTest):
+    OK (0ms)
+
+116) testGetResultsBook1(SearchTest):
+    OK (0ms)
+
+117) testGetResultsBook2(SearchTest):
+    OK (0ms)
+
+118) testGetResultsBook3(SearchTest):
+    OK (0ms)
+
+119) testSearchBook1(SearchTest):
+    OK (0ms)
+
+120) testSearchBook2(SearchTest):
+    OK (0ms)
+
+121) testSearchBook3(SearchTest):
+    OK (0ms)
+
+122) testSetSearch1(SearchTest):
+    OK (0ms)
+
+123) testSetSearch2(SearchTest):
+    OK (0ms)
+
+124) testSetSearch3(SearchTest):
+    OK (0ms)
+
+125) testToString1(SearchTest):
+    OK (3ms)
+
+126) testToString2(SearchTest):
+    OK (0ms)
+
+127) testToString3(SearchTest):
+    OK (0ms)
+
+128) testGetSearchBook1(SearchTest):
     OK (1ms)
 
-79) testSearchBook3(SearchTest):
+129) testGetSearchBook2(SearchTest):
     OK (0ms)
 
-80) testSetSearch1(SearchTest):
+130) testGetSearchBook3(SearchTest):
     OK (0ms)
 
-81) testSetSearch2(SearchTest):
+131) testCapitalizeFirstLetter1(StringManipulatorTest):
+    OK (2ms)
+
+132) testCapitalizeFirstLetter2(StringManipulatorTest):
     OK (0ms)
 
-82) testSetSearch3(SearchTest):
+133) testCapitalizeFirstLetter3(StringManipulatorTest):
     OK (0ms)
 
-83) testToString1(SearchTest):
+134) testReverseString1(StringManipulatorTest):
+    OK (1ms)
+
+135) testReverseString2(StringManipulatorTest):
     OK (0ms)
 
-84) testToString2(SearchTest):
+136) testReverseString3(StringManipulatorTest):
     OK (0ms)
 
-85) testToString3(SearchTest):
+137) testTrimString1(StringManipulatorTest):
     OK (0ms)
 
-86) testGetSearchBook1(SearchTest):
+138) testTrimString2(StringManipulatorTest):
     OK (0ms)
 
-87) testGetSearchBook2(SearchTest):
+139) testTrimString3(StringManipulatorTest):
     OK (0ms)
 
-88) testGetSearchBook3(SearchTest):
+140) testContainsSubstring1(StringManipulatorTest):
+    OK (0ms)
+
+141) testContainsSubstring2(StringManipulatorTest):
+    OK (0ms)
+
+142) testContainsSubstring3(StringManipulatorTest):
+    OK (0ms)
+
+143) testCountOccurrences1(StringManipulatorTest):
+    OK (0ms)
+
+144) testCountOccurrences2(StringManipulatorTest):
+    OK (0ms)
+
+145) testCountOccurrences3(StringManipulatorTest):
+    OK (0ms)
+
+146) testCountOccurrences4(StringManipulatorTest):
+    OK (0ms)
+
+147) testGetNameUser1(UserTest):
+    OK (0ms)
+
+148) testGetNameUser2(UserTest):
+    OK (0ms)
+
+149) testGetNameUser3(UserTest):
+    OK (0ms)
+
+150) testSetIdUser1(UserTest):
+    OK (0ms)
+
+151) testSetIdUser2(UserTest):
+    OK (0ms)
+
+152) testSetIdUser3(UserTest):
+    OK (0ms)
+
+153) testGetPhoneUser1(UserTest):
+    OK (0ms)
+
+154) testGetPhoneUser2(UserTest):
+    OK (0ms)
+
+155) testGetPhoneUser3(UserTest):
+    OK (0ms)
+
+156) testGetBorrowedBooksUser1(UserTest):
+    OK (0ms)
+
+157) testGetBorrowedBooksUser2(UserTest):
+    OK (0ms)
+
+158) testGetBorrowedBooksUser3(UserTest):
+    OK (0ms)
+
+159) testSetPhoneUser1(UserTest):
+    OK (0ms)
+
+160) testSetPhoneUser2(UserTest):
+    OK (0ms)
+
+161) testSetPhoneUser3(UserTest):
+    OK (0ms)
+
+162) testGetIdUser1(UserTest):
+    OK (0ms)
+
+163) testGetIdUser2(UserTest):
+    OK (0ms)
+
+164) testGetIdUser3(UserTest):
     OK (0ms)
 
 
-OK: 88, Failed: 0, Ignored: 0
-Test run finished in 348ms
+OK: 164, Failed: 0, Ignored: 0
+Test run finished in 196ms

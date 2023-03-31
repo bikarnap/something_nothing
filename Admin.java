@@ -6,6 +6,9 @@ import java.util.List;
  * @version 2023.0325
  * @since 17.0
  */
+/**
+ * This Admin class represents an Admin user.
+ */
 public class Admin {
   /**
    * Member variable to store the user as administator.

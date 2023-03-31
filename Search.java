@@ -2,6 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @author  Bikarna Pokharel &lt;bikarnap@gmail.com&gt;
+ * @version 2023.0325
+ * @since 17.0
+ */
+/**
  * This class serves as a Search service where user can search for a book.
  * <p> Result of search is based on avaialbility of book in the library.
  */

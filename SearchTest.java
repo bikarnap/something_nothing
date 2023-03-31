@@ -4,7 +4,15 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
+/**
+ * @author  Bikarna Pokharel &lt;bikarnap@gmail.com&gt;
+ * @version 2023.0325
+ * @since 17.0
+ */
+@RunWith(JUnit4.class)
 public class SearchTest {
   private Book book1, book2, book3;
   private Library library;
@@ -19,9 +27,16 @@ public class SearchTest {
     book3 = new Book("Software Testing, 2nd edition", 
       "Patton R", "1946");
     library = new Library();
-    library.addBook(book1);
-    library.addBook(book2);
-    library.addBook(book3);
+    try {
+      library.addBook(book1);
+      library.addBook(book2);
+      library.addBook(book3);
+    } catch (BookAlreadyExistsException e) {
+      System.out.println(e.getMessage());
+    } catch (InvalidBookException e) {
+      System.out.println(e.getMessage());
+    }
+   
     search = new Search(library);
   }
 
@@ -36,10 +51,10 @@ public class SearchTest {
     assertEquals(1, search.getResults().size());
   }
 
-   /**
+  /**
    * Test the number of results based on the search results.
-   * <p> Tests after searching for Book book2
-   * <p> Uses assertEquals 
+   * <p> Tests after searching for Book book2.
+   * <p> Uses assertEquals. 
    */
   @Test
   public void testGetResultsBook2() {
@@ -47,14 +62,14 @@ public class SearchTest {
     assertEquals(1, search.getResults().size());
   }
 
-   /**
+  /**
    * Test the number of results based on the search results.
-   * <p> Tests after searching for Book book3
-   * <p> Uses assertEquals 
+   * <p> Tests after searching for Book book3.
+   * <p> Uses assertEquals. 
    */
   @Test
   public void testGetResultsBook3() {
-    search.searchBook(book1);
+    search.searchBook(book3);
     assertEquals(1, search.getResults().size());
   }
 
@@ -130,6 +145,7 @@ public class SearchTest {
     search.setSearch("Advanced Testing book");
     assertEquals("Advanced Testing book", search.getSearch());
   }
+
   /**
    * Tests if the application looks for the search string provided.
    * <p> Uses assertEquals to check if the search string matches the returned search string.
@@ -162,7 +178,16 @@ public class SearchTest {
   public void testToString1() {
     Book book4 = new Book("Advanced Software Testing Vol. 2", 
     "Black R.", "1989-111-222");
-    library.addBook(book4);
+    try {
+      library.addBook(book4);
+    } catch (BookAlreadyExistsException e) {
+      System.out.println(e.getMessage());
+      return;
+    } catch (InvalidBookException e) {
+      System.out.println(e.getMessage());
+      return;
+    }
+    
     Search search = new Search(library);
     search.setSearch("Advanced Software Testing Vol. 2");
     assertEquals("Search [search=Advanced Software Testing Vol. 2]", search.toString());
@@ -180,7 +205,15 @@ public class SearchTest {
   public void testToString2() {
     Book book5 = new Book("When the shadow ends", 
     "Pen M.", "1989-111-222");
-    library.addBook(book5);
+    try {
+      library.addBook(book5);
+    } catch (BookAlreadyExistsException e) {
+      System.out.println(e.getMessage());
+      return;
+    } catch (InvalidBookException e) {
+      System.out.println(e.getMessage());
+      return;
+    }
     Search search = new Search(library);
     search.setSearch("When the shadow ends");
     assertEquals("Search [search=When the shadow ends]", search.toString());
@@ -198,7 +231,15 @@ public class SearchTest {
   public void testToString3() {
     Book book6 = new Book("When the shadow ends - Part 2", 
     "Pen M.", "1989-111-221");
-    library.addBook(book6);
+    try {
+      library.addBook(book6);
+    } catch (BookAlreadyExistsException e) {
+      System.out.println(e.getMessage());
+      return;
+    } catch (InvalidBookException e) {
+      System.out.println(e.getMessage());
+      return;
+    }
     Search search = new Search(library);
     search.setSearch("When the shadow ends - Part 2");
     assertEquals("Search [search=When the shadow ends - Part 2]", search.toString());

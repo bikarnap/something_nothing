@@ -7,11 +7,30 @@ import java.util.List;
  * @since 17.0
  */
 public class User {
+  /**
+   * Declares the name of user as String object.
+   */
   private String name;
+  /**
+   * Declares the phone number of user as String object.
+   */
   private String phone;
+  /**
+   * Declares the id of user as int type.
+   */
   private int id;
+  /**
+   * Declares a List of Book object.
+   */
   private List<Book> borrowedBooks;
 
+  /**
+   * Constructs a User object with the provided arguments.
+   * <p> It also initializes an ArrayList for the list of books borrowed by user.
+   * @param name the name of user
+   * @param phone the phone number of user
+   * @param id the id of user
+   */
   public User(String name, String phone, int id) {
     this.name = name;
     this.phone = phone;
@@ -28,22 +47,42 @@ public class User {
     return name;
   }
 
+  /**
+   * Gets the phone number of user.
+   * @return the phone number of user
+   */
   public String getPhone() {
     return phone;
   }
 
+  /**
+   * Sets the phone number of user with the given arugment.
+   * @param phone the phone number to be set
+   */
   public void setPhone(String phone) {
     this.phone = phone;
   }
 
+  /**
+   * Gets the id of the user.
+   * @return the id of user
+   */
   public int getId() {
     return id;
   }
 
+  /**
+   * Sets the id of user with the given id argument.
+   * @param id the id of user to be set
+   */
   public void setId(int id) {
     this.id = id;
   }
 
+  /**
+   * Gets a list of books borrowed by the user.
+   * @return the list of books borrowed by the user
+   */
   public List<Book> getBorrowedBooks() {
     return borrowedBooks;
   }

@@ -75,33 +75,188 @@ public class LibraryTest {
     
   }
 
-  // @Test
-  // public void testAddUser() {
+  /**
+   * Tests addUser method.
+   */
+  @Test
+  public void testAddUser1() {
+    User user1 = new User("Bikarna Pokharel", "0466151364", 1);
+    library.addUser(user1);
+    assertTrue(library.getUsers().contains(user1));
+  }
 
-  // }
+   /**
+   * Tests addUser method.
+   */
+  @Test
+  public void testAddUser2() {
+    User user2 = new User("Timo Pitkanen", "0466123164", 2);
+    library.addUser(user2);
+    assertTrue(library.getUsers().contains(user2));
+  }
 
-  // @Test
-  // public void testGetAllBooks() {
+   /**
+   * Tests addUser method.
+   */
+  @Test
+  public void testAddUser() {
+    User user3 = new User("Reshma Mahat", "0445413649", 3);
+    library.addUser(user3);
+    assertTrue(library.getUsers().contains(user3));
+  }
 
-  // }
+  /**
+   * Tests getAllBooks method.
+   */
+  @Test
+  public void testGetAllBooks1() {
+    assertEquals(0, library.getAllBooks().size());
+  }
 
-  // @Test
-  // public void testGetNumberOfBooks() {
+  /**
+   * Tests getAllBooks method.
+   */
+  @Test
+  public void testGetAllBooks2() {
+    Book book1 = new Book("Advanced Software Testing Vol. 1", 
+      "Black R.", "1912");
+    try {
+      library.addBook(book1);
+    } catch (BookAlreadyExistsException e) {
+      return;
+    } catch (InvalidBookException e) {
+      return;
+    }
+    assertEquals(1, library.getAllBooks().size());
+  }
 
-  // }
+  /**
+   * Tests getAllBooks method.
+   */
+  @Test
+  public void testGetAllBooks3() {
+    Book book2 = new Book("The Software Engineer's Handbook, 1st editonAdvanced Software Testing Vol. 1", 
+      "Graham B & McKay J", "1911");
+    Book book3 = new Book("Software Testing, 2nd edition", 
+    "Patton R", "1946");
+    try {
+      library.addBook(book2);
+      library.addBook(book3);
+    } catch (BookAlreadyExistsException e) {
+      return;
+    } catch (InvalidBookException e) {
+      return;
+    }
+    assertEquals(2, library.getAllBooks().size());
+  }
 
-  // @Test
-  // public void testIsBookAvailable() {
+  /**
+   * Tests getNumberOfBooks method.
+   */
+  @Test
+  public void testGetNumberOfBooks1() {
+    assertEquals(0, library.getNumberOfBooks());
+  }
 
-  // }
+  /**
+   * Tests getNumberOfBooks method.
+   */
+  @Test
+  public void testGetNumberOfBooks2() {
+    Book book1 = new Book("Advanced Software Testing Vol. 1", 
+    "Black R.", "1912");
+    try {
+      library.addBook(book1);
+    } catch (BookAlreadyExistsException e) {
+      return;
+    } catch (InvalidBookException e) {
+      return;
+    }
+    assertEquals(1, library.getNumberOfBooks());
+  }
 
-  // @Test
-  // public void testRemoveBook() {
+  /**
+   * Tests getNumberOfBooks method.
+   */
+  @Test
+  public void testGetNumberOfBooks3() {
+    Book book2 = new Book("The Software Engineer's Handbook, 1st editonAdvanced Software Testing Vol. 1", 
+      "Graham B & McKay J", "1911");
+    Book book3 = new Book("Software Testing, 2nd edition", 
+      "Patton R", "1946");
+    try {
+      library.addBook(book2);
+      library.addBook(book3);
+    } catch (BookAlreadyExistsException e) {
+      return;
+    } catch (InvalidBookException e) {
+      return;
+    }
+    assertEquals(2, library.getNumberOfBooks());
+  }
 
-  // }
+  /**
+   * Tests removeBook method.
+   */
+  @Test
+  public void testRemoveBook1() {
+    Book book2 = new Book("The Software Engineer's Handbook, 1st editonAdvanced Software Testing Vol. 1", 
+      "Graham B & McKay J", "1911");
+    Book book3 = new Book("Software Testing, 2nd edition", 
+      "Patton R", "1946");
+    try {
+      library.addBook(book2);
+      library.addBook(book3);
+    } catch (BookAlreadyExistsException e) {
+      return;
+    } catch (InvalidBookException e) {
+      return;
+    }
+    library.removeBook(book3);
+    assertFalse(library.getAllBooks().contains(book3));
+  }
 
-  // @Test
-  // public void testRemoveUser() {
+  /**
+   * Tests removeBook method.
+   */
+  @Test
+  public void testRemoveBook2() {
+    Book book2 = new Book("The Software Engineer's Handbook, 1st editonAdvanced Software Testing Vol. 1", 
+      "Graham B & McKay J", "1911");
+    Book book3 = new Book("Software Testing, 2nd edition", 
+      "Patton R", "1946");
+    try {
+      library.addBook(book2);
+      library.addBook(book3);
+    } catch (BookAlreadyExistsException e) {
+      return;
+    } catch (InvalidBookException e) {
+      return;
+    }
+    library.removeBook(book2);
+    assertFalse(library.getAllBooks().contains(book2));
+  }
 
-  // }
+  /**
+   * Tests removeBook method.
+   */
+  @Test
+  public void testRemoveBook3() {
+    Book book2 = new Book("The Software Engineer's Handbook, 1st editonAdvanced Software Testing Vol. 1", 
+      "Graham B & McKay J", "1911");
+    Book book3 = new Book("Software Testing, 2nd edition", 
+      "Patton R", "1946");
+    try {
+      library.addBook(book2);
+      library.addBook(book3);
+    } catch (BookAlreadyExistsException e) {
+      return;
+    } catch (InvalidBookException e) {
+      return;
+    }
+    library.removeBook(book2);
+    library.removeBook(book3);
+    assertFalse(library.getAllBooks().contains(book2));
+    assertFalse(library.getAllBooks().contains(book3));
+  }
 }
