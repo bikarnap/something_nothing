@@ -7,7 +7,7 @@ pipeline {
         stage('Example') {
             steps {
                 /* WRONG! */
-                sh("curl -u ${EXAMPLE_CREDS_USR}:${EXAMPLE_CREDS_PSW} https://github.com/bikarnap/something_nothing")
+                bat("curl -u ${EXAMPLE_CREDS_USR}:${EXAMPLE_CREDS_PSW} https://github.com/bikarnap/something_nothing")
             }
         }
     }
