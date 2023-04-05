@@ -1,45 +1,46 @@
 pipeline {
-    agent any
-     options {
-        // This is required if you want to clean before build
-        skipDefaultCheckout(true)
-    }
-    environment {
-        EXAMPLE_CREDS = credentials('github-user-psw')
-    }
-    stages {
-        // stage('Example') {
-        //     steps {
-        //         /* WRONG! */
-        //         bat("curl -u ${EXAMPLE_CREDS_USR}:${EXAMPLE_CREDS_PSW} https://github.com/bikarnap/something_nothing")
-        //     }
-        // }
-        stage('Clone repo') {
-            steps {
-                bat('git clone  https://github.com/bikarnap/something_nothing')
-                bat('echo hello > hello.txt')
-            }
-        }
-        stage('archive') {
-            steps {
-                bat('7z.exe a archive *.java')
-                // bat 'echo hello'
-            }
-        }
-    }
-    post {
-        // Clean after build
-        always {
-            archiveArtifacts artifacts: 'archive.*', fingerprint: true
-            cleanWs(cleanWhenNotBuilt: true,
-                    deleteDirs: true,
-                    disableDeferredWipeout: true,
-                    notFailBuild: true,
-                    patterns: [[pattern: '.gitignore', type: 'INCLUDE'],
-                              [pattern: 'something_nothing/*', type: 'INCLUDE'],
-                              [pattern: '*', type: 'INCLUDE'],
-                              [pattern: '*.7z', type: 'EXCLUDE'],
-                              [pattern: '.propsfile', type: 'EXCLUDE']])
-        }
-    }
+	agent any
+		options {
+			// This is required if you want to clean before build
+			skipDefaultCheckout(true)
+			timestamps () 
+	}
+	environment {
+		EXAMPLE_CREDS = credentials('github-user-psw')
+	}
+	stages {
+			// stage('Example') {
+			//     steps {
+			//         /* WRONG! */
+			//         bat("curl -u ${EXAMPLE_CREDS_USR}:${EXAMPLE_CREDS_PSW} https://github.com/bikarnap/something_nothing")
+			//     }
+			// }
+			stage('Clone repo') {
+				steps {
+					bat('git clone  https://github.com/bikarnap/something_nothing')
+					bat('echo hello > hello.txt')
+				}
+			}
+			stage('archive') {
+				steps {
+					bat('7z.exe a archive *.java')
+					// bat 'echo hello'
+				}
+			}
+	}
+	post {
+		// Clean after build
+		always {
+			archiveArtifacts artifacts: 'archive.*', fingerprint: true
+			cleanWs(cleanWhenNotBuilt: true,
+								deleteDirs: true,
+								disableDeferredWipeout: true,
+								notFailBuild: true,
+								patterns: [[pattern: '.gitignore', type: 'INCLUDE'],
+												[pattern: 'something_nothing/*', type: 'INCLUDE'],
+												[pattern: '*', type: 'INCLUDE'],
+												[pattern: '*.7z', type: 'EXCLUDE'],
+												[pattern: '.propsfile', type: 'EXCLUDE']])
+		}
+	}
 }
