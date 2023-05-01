@@ -6,7 +6,7 @@ pipeline {
 			timestamps () 
 	}
 	environment {
-		EXAMPLE_CREDS = credentials('github-user-psw')
+		EXAMPLE_CREDS = credentials('GitHub')
 	}
 	stages {
 			// stage('Example') {
@@ -17,13 +17,13 @@ pipeline {
 			// }
 			stage('Clone repo') {
 				steps {
-					bat('git clone  https://github.com/bikarnap/something_nothing')
-					bat('echo hello > hello.txt')
+					sh('git clone git@github.com:bikarnap/something_nothing.git')
+					sh('echo hello > hello.txt')
 				}
 			}
 			stage('archive') {
 				steps {
-					bat('7z.exe a archive *.java')
+					sh('zip -r archive.zip *.java')
 					// bat 'echo hello'
 				}
 			}
