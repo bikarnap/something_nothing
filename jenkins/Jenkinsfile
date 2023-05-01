@@ -23,7 +23,7 @@ pipeline {
 			}
 			stage('archive') {
 				steps {
-					sh('zip -r archive.zip *.java')
+					sh('tar -cvf archive.tar *.java')
 					// bat 'echo hello'
 				}
 			}
