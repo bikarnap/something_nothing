@@ -23,6 +23,7 @@ pipeline {
 			}
 			stage('archive') {
 				steps {
+					sh('ls -la')
 					sh('tar -cvf archive.tar ./*.java')
 					// bat 'echo hello'
 				}
